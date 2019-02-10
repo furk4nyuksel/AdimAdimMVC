@@ -7,7 +7,7 @@ Sql Kavramı
 
 Entity Framework
 
-Asp.net Mvc Nedir ?
+Asp.net Mvc Ve Temel Kavramlar
 
 Session Kullanımı
 
