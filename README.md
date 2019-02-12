@@ -1,21 +1,22 @@
 # AdimAdimMVC Konu Başlıkları
 
 
-Koleksiyonlarda Liste Kullanımı
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Koleksiyonlarda-List-Kullan%C4%B1m%C4%B1-(Generic-Collection)">Koleksiyonlarda Liste Kullanımı</a>
 
-Sql Kavramı
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Sql-Kavramlar%C4%B1-(Basic-Sql)">Sql Kavramı</a>
 
 Entity Framework
 
-Asp.net Mvc Ve Temel Kavramlar
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Asp.Net.Mvc-Temel">Asp.net Mvc Ve Temel Kavramlar</a>
+
+
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Viewbag-Kullan%C4%B1m%C4%B1">Viewbag Kullanımı</a>
 
 Session Kullanımı
 
 Cookie Kullanımı
 
 Query String
-
-Viewbag Kullanımı
 
 Model 
 
