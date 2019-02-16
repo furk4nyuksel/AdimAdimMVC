@@ -16,7 +16,7 @@ Session Kullanımı
 
 Cookie Kullanımı
 
-Query String
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/QueryString-Kullan%C4%B1m%C4%B1">Query String</a>
 
 Model 
 
