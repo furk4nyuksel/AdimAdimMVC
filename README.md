@@ -5,7 +5,7 @@
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Sql-Kavramlar%C4%B1-(Basic-Sql)">Sql Kavramı</a>
 
-Entity Framework
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/EntityFramework-Kullan%C4%B1m%C4%B1">Entity Framework</a>
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Asp.Net.Mvc-Temel">Asp.net Mvc Ve Temel Kavramlar</a>
 
