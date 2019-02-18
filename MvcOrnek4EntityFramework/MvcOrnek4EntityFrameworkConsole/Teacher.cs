@@ -14,10 +14,19 @@ namespace MvcOrnek4EntityFrameworkConsole
     
     public partial class Teacher
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Teacher()
+        {
+            this.Lessons = new HashSet<Lessons>();
+        }
+    
         public int TeacherId { get; set; }
         public string TeacherName { get; set; }
         public Nullable<System.DateTime> CreateDate { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public Nullable<bool> IsDelete { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Lessons> Lessons { get; set; }
     }
 }

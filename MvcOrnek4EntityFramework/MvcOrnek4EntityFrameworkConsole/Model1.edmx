@@ -4,7 +4,17 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SchoolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SchoolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Lessons">
+          <Key>
+            <PropertyRef Name="LessonsId" />
+          </Key>
+          <Property Name="LessonsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LessonsName" Type="nvarchar" MaxLength="50" />
+          <Property Name="TeacherId" Type="int" />
+          <Property Name="IsActive" Type="bit" />
+          <Property Name="IsDeleted" Type="bit" />
+        </EntityType>
         <EntityType Name="Teacher">
           <Key>
             <PropertyRef Name="TeacherId" />
@@ -15,11 +25,27 @@
           <Property Name="IsActive" Type="bit" />
           <Property Name="IsDelete" Type="bit" />
         </EntityType>
+        <Association Name="FK__Lessons__Teacher__5CD6CB2B">
+          <End Role="Teacher" Type="Self.Teacher" Multiplicity="0..1" />
+          <End Role="Lessons" Type="Self.Lessons" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teacher">
+              <PropertyRef Name="TeacherId" />
+            </Principal>
+            <Dependent Role="Lessons">
+              <PropertyRef Name="TeacherId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="SchoolModelStoreContainer">
+          <EntitySet Name="Lessons" EntityType="Self.Lessons" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Lessons__Teacher__5CD6CB2B" Association="Self.FK__Lessons__Teacher__5CD6CB2B">
+            <End Role="Teacher" EntitySet="Teacher" />
+            <End Role="Lessons" EntitySet="Lessons" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SchoolModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -32,10 +58,39 @@
           <Property Name="CreateDate" Type="DateTime" Precision="3" />
           <Property Name="IsActive" Type="Boolean" />
           <Property Name="IsDelete" Type="Boolean" />
+          <NavigationProperty Name="Lessons" Relationship="SchoolModel.FK__Lessons__Teacher__5CD6CB2B" FromRole="Teacher" ToRole="Lessons" />
         </EntityType>
         <EntityContainer Name="SchoolEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Teacher" EntityType="Self.Teacher" />
+          <EntitySet Name="Lessons" EntityType="SchoolModel.Lessons" />
+          <AssociationSet Name="FK__Lessons__Teacher__5CD6CB2B" Association="SchoolModel.FK__Lessons__Teacher__5CD6CB2B">
+            <End Role="Teacher" EntitySet="Teacher" />
+            <End Role="Lessons" EntitySet="Lessons" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Lessons">
+          <Key>
+            <PropertyRef Name="LessonsId" />
+          </Key>
+          <Property Name="LessonsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LessonsName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TeacherId" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <NavigationProperty Name="Teacher" Relationship="SchoolModel.FK__Lessons__Teacher__5CD6CB2B" FromRole="Lessons" ToRole="Teacher" />
+        </EntityType>
+        <Association Name="FK__Lessons__Teacher__5CD6CB2B">
+          <End Type="SchoolModel.Teacher" Role="Teacher" Multiplicity="0..1" />
+          <End Type="SchoolModel.Lessons" Role="Lessons" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teacher">
+              <PropertyRef Name="TeacherId" />
+            </Principal>
+            <Dependent Role="Lessons">
+              <PropertyRef Name="TeacherId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -50,6 +105,17 @@
                 <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
                 <ScalarProperty Name="IsActive" ColumnName="IsActive" />
                 <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lessons">
+            <EntityTypeMapping TypeName="SchoolModel.Lessons">
+              <MappingFragment StoreEntitySet="Lessons">
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+                <ScalarProperty Name="LessonsName" ColumnName="LessonsName" />
+                <ScalarProperty Name="LessonsId" ColumnName="LessonsId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

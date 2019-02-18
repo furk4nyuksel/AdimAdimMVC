@@ -26,5 +26,6 @@ namespace MvcOrnek4EntityFrameworkConsole
         }
     
         public virtual DbSet<Teacher> Teacher { get; set; }
+        public virtual DbSet<Lessons> Lessons { get; set; }
     }
 }
