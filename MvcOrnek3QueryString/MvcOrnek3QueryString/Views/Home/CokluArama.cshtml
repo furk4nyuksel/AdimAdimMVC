@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "CokluArama";
+}
+
+<h2>CokluArama</h2>
+
+@if (ViewBag.result == null)
+{
+    <h3>@ViewBag.nick</h3>
+    <br />
+    <h3>@ViewBag.yas</h3>
+}
+else
+{
+
+    <h3>@ViewBag.result</h3>
+}
