@@ -13,6 +13,7 @@
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Viewbag-Kullan%C4%B1m%C4%B1">Viewbag Kullanımı</a>
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Asp.Net-Mvc'de-Html-Formu-Post-Ettirmek">Asp.Net Mvc'de Html Formu Post Ettirmek</a>
+
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Session-Kullan%C4%B1m%C4%B1">Session Kullanımı</a>
 
 Cookie Kullanımı
