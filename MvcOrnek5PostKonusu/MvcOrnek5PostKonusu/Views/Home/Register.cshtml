@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Kayıt Ol</h2>
+
+
+
+@using (Html.BeginForm("Register", "Home", FormMethod.Post))
+{
+
+<div class="form-group">
+    <div class="form-group">
+        <label>Kullanıcı Adı</label>
+        <input class="form-control" type="text" name="userName" required />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="text" name="email" required />
+    </div>
+    <div class="form-group">
+        <label>Şifre</label>
+        <input class="form-control" type="password" name="password" required />
+    </div>
+
+    <div class="form-group">
+       <input type="submit" class="btn btn-success" />
+    </div>
+</div>
+}
