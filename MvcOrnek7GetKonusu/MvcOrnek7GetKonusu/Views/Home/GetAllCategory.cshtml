@@ -1,0 +1,18 @@
+﻿@model List<Categories>
+@{
+    ViewBag.Title = "GetAllCategory";
+}
+
+@foreach (var item in Model)
+{
+    <table class="table table-bordered table-condensed table-responsive">
+        <tr>
+            <td>CategoryId</td>
+            <td>CategoryName</td>
+        </tr>
+        <tr>
+            <td>@item.CategoryID</td>
+            <td>@item.CategoryName</td>
+        </tr>
+    </table>
+}
