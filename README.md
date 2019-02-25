@@ -14,6 +14,9 @@
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Asp.Net-Mvc'de-Html-Formu-Post-Ettirmek">Asp.Net Mvc'de Html Formu Post Ettirmek</a>
 
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Asp.net-Mvc'de-Get-%C4%B0%C5%9Flemleri">Asp.net Mvc'de Get İşlemleri
+</a>
+
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Session-Kullan%C4%B1m%C4%B1">Session Kullanımı</a>
 
 Cookie Kullanımı
