@@ -19,11 +19,17 @@ namespace MvcOrnek7GetKonusu.Controllers
         {
             return View();
         }
-        
+        //Çoklu veri
         public ActionResult GetAllCategory()
         {
             var query = db.Categories.ToList();
 
+            return View(query);
+        }
+        //Tekli veri
+        public ActionResult GetCategory(int Id=0)
+        {
+            var query = db.Categories.Where(s => s.CategoryID == Id).SingleOrDefault();
             return View(query);
         }
     }
