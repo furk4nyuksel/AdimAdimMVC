@@ -27,7 +27,7 @@ DropDown Kullanımı
 
 Custom Model
 
-Html Helper Kullanımı
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Html-Helper-Nedir-Kullan%C4%B1m%C4%B1">Html Helper Kullanımı </a>
 
 Partital view
 
