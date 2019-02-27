@@ -19,7 +19,7 @@
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Session-Kullan%C4%B1m%C4%B1">Session Kullanımı</a>
 
-Cookie Kullanımı
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Cookie-Konusu">Cookie Kullanımı</a>
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/QueryString-Kullan%C4%B1m%C4%B1">Query String</a>
 
@@ -27,7 +27,7 @@ DropDown Kullanımı
 
 Custom Model
 
-Custom Model
+Html Helper Kullanımı
 
 Post İşlemleri
 
