@@ -1,0 +1,13 @@
+﻿@model List<SelectListItem>
+@{
+    ViewBag.Title = "GetAllList";
+}
+
+<h2>GetAllList</h2>
+
+@foreach (var item in Model)
+{
+    @Html.ActionLink(item.Text, "GetData","Home",new { @id = item.Value },new {@class="btn btn-success"}) 
+ 
+    <br />
+}

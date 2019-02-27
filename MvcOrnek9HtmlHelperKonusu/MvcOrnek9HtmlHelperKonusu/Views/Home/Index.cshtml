@@ -11,21 +11,30 @@
 
 @*Razor TextBox*@
 
-@Html.TextBox("textbx",string.Empty,new {@placeholder="TextBox",@class="form-control" })
+@Html.TextBox("textbx", string.Empty, new { @placeholder = "TextBox", @class = "form-control" })
 
 
 @*Html Hidden*@
 
-<input type="hidden"  name="hiddenTxt" value="11" />
+<input type="hidden" name="hiddenTxt" value="11" />
 
 @* Razor Hidden*@
 
 @Html.Hidden("hiddenTxt", "11");
 
-@*Html  A Href*@
+@*Html  UrlAction *@
 
 <a href="/Home/Index">Linke Git</a>
 
-@*Razor A Href*@
+@*Razor UrlAction*@
 
 <a href="@Url.Action("Index","Home")"></a>
+
+
+@*Html  A Href*@
+
+<a href="/Home/Index" class="btn btn-success">Linke Git</a>
+
+@*Razor  A Href*@
+
+@Html.ActionLink("Linke Git", "Index", "Home", new { @class = "btn btn-success" })
