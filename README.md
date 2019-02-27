@@ -29,8 +29,6 @@ Custom Model
 
 Html Helper Kullanımı
 
-Post İşlemleri
-
 Partital view
 
 Layout Dressing
