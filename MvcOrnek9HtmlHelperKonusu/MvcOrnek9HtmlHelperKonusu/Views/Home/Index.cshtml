@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*Html Textbox*@
+
+<input type="text" name="textbx" class="form-control" />
+
+@*Razor TextBox*@
+
+@Html.TextBox("textbx",string.Empty,new {@placeholder="TextBox",@class="form-control" })
