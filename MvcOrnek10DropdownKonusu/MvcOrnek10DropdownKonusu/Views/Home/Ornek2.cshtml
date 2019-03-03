@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Ornek2";
+}
+
+<h2>Ornek2</h2>
+
+<div class="form-group">
+    @Html.DropDownList("ddlCategories", ViewBag.ddlData as SelectList, "Lütfen Bir Kategori Seçiniz", new { @class = "form-control" })
+
+</div>

@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="form-group">
+
+    @Html.DropDownList("ddlCategories",new SelectList(ViewBag.ddlData, "CategoryID", "CategoryName"), "Lütfen Bir Kategori Seçiniz", new {@class="form-control" })
+
+</div>
