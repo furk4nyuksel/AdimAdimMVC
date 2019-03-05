@@ -1,0 +1,62 @@
+﻿@model MvcOrnek11CustomModelKonusu.Models.GetManyTableModel
+@{
+    ViewBag.Title = "GetAll";
+}
+
+<h2>Categories</h2>
+
+<table class="table table-bordered table-hover table-responsive">
+
+    <tr>
+        <th>CategoryID</th>
+        <th>CategoryName</th>
+    </tr>
+    @foreach (var item in Model.Categories)
+    {
+        <tr>
+            <td>@item.CategoryID</td>
+            <td>@item.CategoryName</td>
+        </tr>
+    }
+</table>
+
+</br>
+</br>
+
+<h2>ProductName</h2>
+<table class="table table-bordered table-hover table-responsive">
+
+    <tr>
+        <th>ProductID</th>
+        <th>ProductName</th>
+    </tr>
+    @foreach (var item in Model.Products)
+    {
+        <tr>
+            <td>@item.ProductID</td>
+            <td>@item.ProductName</td>
+        </tr>
+    }
+</table>
+
+
+</br>
+</br>
+
+<h2>Shippers</h2>
+<table class="table table-bordered table-hover table-responsive">
+
+    <tr>
+        <th>ShipperID</th>
+        <th>CompanyName</th>
+    </tr>
+    @foreach (var item in Model.Shippers)
+    {
+        <tr>
+            <td>@item.ShipperID</td>
+            <td>@item.CompanyName</td>
+        </tr>
+    }
+</table>
+
+
