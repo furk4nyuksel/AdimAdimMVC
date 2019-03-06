@@ -25,7 +25,7 @@
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Html-Helper-%C4%B0le-DropDown-Kullan%C4%B1m%C4%B1">DropDown Kullanımı </a>
 
-Custom Model
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Custom-Model-Kullan%C4%B1m%C4%B1">Custom Model </a>
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Html-Helper-Nedir-Kullan%C4%B1m%C4%B1">Html Helper Kullanımı </a>
 
