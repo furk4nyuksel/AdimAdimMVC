@@ -35,4 +35,4 @@ Layout Dressing
 
 Js Jason Parse İşlemleri
 
-Area Nedir ? Kullanımı
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Area-Kullan%C4%B1m%C4%B1">Area Nedir ? Kullanımı</a>
