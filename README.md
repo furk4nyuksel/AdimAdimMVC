@@ -29,9 +29,9 @@
 
 <a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Html-Helper-Nedir-Kullan%C4%B1m%C4%B1">Html Helper Kullanımı </a>
 
-Partital view
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Partital-View-Kullan%C4%B1m%C4%B1">Partital View</a>
 
-Layout Dressing
+<a href="https://github.com/furk4nyuksel/AdimAdimMVC/wiki/Asp.Net-Mvc-Layout-Giydirme-%C4%B0%C5%9Flemi">Layout Dressing</a>
 
 Js Jason Parse İşlemleri
 
