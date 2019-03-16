@@ -1,0 +1,7 @@
+﻿@model List<Categories>
+
+
+@foreach (var item in Model)
+{
+    @Html.ActionLink(item.CategoryName,"Index","Home",new {@class="btn btn-success" })
+}
