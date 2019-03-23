@@ -14,7 +14,7 @@
 
 <a href="https://github.com/ibanez75612/AdimAdimMVC/wiki/Asp.Net-Mvc'de-Html-Formu-Post-Ettirmek">Asp.Net Mvc'de Html Formu Post Ettirmek</a>
 
-<a href="https://github.com/ibanez75612/AdimAdimMVC/wiki/Asp.net-Mvc'de-Get-%C4%B0%C5%9Flemleri">Asp.net Mvc'de Get İşlemleri (Model)
+<a href="https://github.com/ibanez75612/AdimAdimMVC/wiki/Asp.net-Mvc'de-Model-%C4%B0le-Get-%C4%B0%C5%9Flemleri">Asp.net Mvc'de Get İşlemleri (Model)
 </a>
 
 <a href="https://github.com/ibanez75612/AdimAdimMVC/wiki/Session-Kullan%C4%B1m%C4%B1">Session Kullanımı</a>
